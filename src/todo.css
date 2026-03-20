@@ -250,9 +250,17 @@ body {
   opacity: 0.55;
 }
 
+.todo-item.priority-high   { background: #fff5f5; border-color: #ffcdd2; }
+.todo-item.priority-medium { background: #fffbf0; border-color: #ffe0b2; }
+.todo-item.priority-low    { background: #f5faf5; border-color: #c8e6c9; }
+
+.todo-item.priority-high:hover   { background: #ffecec; border-color: #ef9a9a; }
+.todo-item.priority-medium:hover { background: #fff3e0; border-color: #ffcc80; }
+.todo-item.priority-low:hover    { background: #ebf5eb; border-color: #a5d6a7; }
+
 .todo-item.overdue {
-  border-color: #ffcdd2;
-  background: #fff9f9;
+  border-color: #ef9a9a;
+  background: #fff5f5;
 }
 
 /* Check button */

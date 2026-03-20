@@ -162,7 +162,7 @@ function TodoItem({ todo, onToggle, onDelete, onUpdate }) {
   const overdue = isOverdue(todo)
 
   return (
-    <li className={`todo-item${todo.completed ? ' completed' : ''}${overdue ? ' overdue' : ''}`}>
+    <li className={`todo-item priority-${todo.priority}${todo.completed ? ' completed' : ''}${overdue ? ' overdue' : ''}`}>
       <button
         className="check-btn"
         onClick={() => onToggle(todo.id)}
